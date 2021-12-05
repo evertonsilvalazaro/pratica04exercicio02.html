@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="pratica04exercicios02.css" type="text/css">
+    <script src="pratica04exercicio02.js" type="text/javascript"></script>  
+  </head>
+  <body>
+    <form>
+        <h1>cadastro de funcionarios</h1>
+        <table>
+            <tr>
+                <td>nome</td>
+                <td><input type="text" id="nome" class="entrada" /></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="text" id="email" class="entrada" /></td>
+            </tr>
+            <tr>
+                <td>Data de nascimento:</td>
+                <td><input type="text" id="datanasc" class="entrada" onkeypress="return mascData(this, event);" /></td>
+            </tr>
+            <tr>
+                <td>Escolaridade</td>
+                <td>
+                 <select type="text" id="email" class="entrada" />
+                    <option value=""></option>
+                    <option value="1">Ensino fundamental</option>
+                    <option value="1">Ensin medio</option>
+                    <option value="1">Graduação</option>
+                    <option value="1">pós-Graduação</option>
+                 </select>
+                </td>
+            </tr>
+            <tr>
+                <td>sexo:</td>
+                <td>
+                    <input name="sexo" id="sexoFeminino" class="entrada" type="radio" />
+                    <label for="sexoFeminino">Feminino</label>
+                    <input name="sexo" id="sexoMasculino" class="entrada" type="radio" />
+                    <label for="sexoMasculino">Masculino</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" class="botao" value="Limpar" name="limpa" />
+                </td>
+            <td>
+                <input type="submit" id="cadastro" class="botao" value="cadastrar" name="cadastro" onclick="return verificarFormulario();" />
+                </td>
+            </tr>
+        </table>
+     </form>
+    <div id="resp"></div>    
+  </body>
+</html>
