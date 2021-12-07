@@ -1,10 +1,11 @@
 function mascData(objeto, evento) {
+  
 
-    if (evento.keycode ==8 || evento.keycode == 46){
+    if (evento.keyCode == 8 || evento.keyCode == 46){
         return true;
     }
 
-    if (evento.keycode <48 || evento.keycode > 57){
+    if (evento.keyCode < 48 || evento.keyCode > 57){
         alert("somente números")
         return false;
     }
@@ -57,6 +58,8 @@ if (mensagemErro == "") {
     alert ("Funcionário cadastrado com sucesso!");
     return true;
 } else {
-    Response.innerHTML = mensagemErro;
+    
+    var resp = document.getElementById("resp");
+    resp.innerHTML = mensagemErro;
    }
 }
